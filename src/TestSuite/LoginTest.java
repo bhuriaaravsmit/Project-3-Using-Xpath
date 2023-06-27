@@ -59,11 +59,11 @@ public class LoginTest extends BaseTest {
 //Click on Login Button
 
         driver.findElement(By.xpath("//i[@class='fa fa-2x fa-sign-in']")).click();
-        String expectedText = "Your username is invalid!\n" +
+        String expectedText = "Your password is invalid!\n" +
                 "×";
         String actualText = driver.findElement(By.id("flash")).getText();
         System.out.println(actualText);
-        Assert.assertEquals("Your username is Invalid", expectedText, actualText);
+        Assert.assertEquals("Your password is Invalid", expectedText, actualText);
 
     }
 
